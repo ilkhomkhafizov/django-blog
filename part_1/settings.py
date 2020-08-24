@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog.apps.BlogConfig'
+    'blog.apps.BlogConfig',
+    'taggit'
 ]
 
 MIDDLEWARE = [
@@ -101,6 +102,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Отправка писем с почтового ящыка
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'ilhomhafizov6@gmail.com'
+EMAIL_HOST_PASSWORD = 'gubkin2014'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
